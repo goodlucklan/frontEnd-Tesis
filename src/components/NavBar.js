@@ -6,10 +6,13 @@ export const NavBar = () => {
       <div className="collapse" id="navbarToggleExternalContent">
         <div className="bg-dark p-4">
           <Link className="text-white h4" to="/">
-            Collapsed content
+            Home
           </Link>
           <Link className="nav-link" to="/product">
-            Productos
+            Lista de Productos
+          </Link>
+          <Link className="nav-link" to="/users">
+            Lista de Usuarios
           </Link>
         </div>
       </div>

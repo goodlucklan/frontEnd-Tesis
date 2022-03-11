@@ -6,6 +6,7 @@ import { NotFound } from "../pages/NotFound";
 import { Login } from "../pages/Login";
 import { NavBar } from "../components/NavBar";
 import { Product } from "../pages/Product";
+import { User } from "../pages/User"
 export const Navigation = () => {
   const { isAuthenticated } = useContext(AuthenticationContext);
   const [user, SetUser] = useState(null);
@@ -25,6 +26,7 @@ export const Navigation = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="*" element={<NotFound />} />
           <Route exact path="/product" element={<Product />} />
+          <Route exact path="/users" element={<User />} />
         </Routes>
       </Router>
     );

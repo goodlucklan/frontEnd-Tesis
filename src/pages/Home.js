@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const Home = () => {
+  useEffect(() => {
+  } , [])
   return (
     <div className="card-group col d-flex justify-content-center row">
       <div className="card col-sm-12 col-md-6 col-lg-6">
